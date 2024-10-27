@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>javascript code editor</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="input-container">
+            <div class="resizer">
+                HTML
+            </div>
+            <div class="box">
+
+                <textarea name="html-code" id="html-code"></textarea>
+            </div>
+            <div class="resizer">
+                CSS
+            </div>
+            <div class="box">
+
+                <textarea name="css-code" id="css-code"></textarea>
+            </div>
+            <div class="resizer">
+                JAVASCRIPT
+            </div>
+            <div class="box">
+
+                <textarea name="js-code" id="js-code"></textarea>
+            </div>
+        </div>
+
+        <div id="height-resizer"></div>
+
+        <div class="output-container">
+            <div class="header">
+                <button id="theme-toggle" class="toggle-button">
+                    <i class="fa-solid fa-moon"></i> Dark Mode
+                </button>
+                <span id="output-text">Output</span>
+            </div>
+            <iframe name="output" id="output">
+
+            </iframe>
+        </div>
+    </div>
+</body>
+
+</html>
